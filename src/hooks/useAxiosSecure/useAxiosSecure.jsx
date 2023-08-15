@@ -13,7 +13,7 @@ const useAxiosSecure = () => {
         const navigate = useNavigate();
 
         const axiosSecure = axios.create({
-            baseURL: 'http://localhost:5000',
+            baseURL: 'https://bistro-boss-server-blush-phi.vercel.app',
         });
 
 

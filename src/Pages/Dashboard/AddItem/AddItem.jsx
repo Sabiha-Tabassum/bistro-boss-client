@@ -27,7 +27,7 @@ const AddItem = () => {
                 const {name, price, category,recipe} = data;
                 const newItem = {name,price: parseFloat(price),category,recipe,image:imgURL};
                 console.log(newItem);
-                fetch('http://localhost:5000/menu', {
+                fetch('https://bistro-boss-server-blush-phi.vercel.app/menu', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'

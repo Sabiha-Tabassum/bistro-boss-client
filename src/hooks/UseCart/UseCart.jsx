@@ -15,7 +15,7 @@ const useCart = () => {
        
 
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/carts?email=${user?.email}`)
+            const res = await fetch(`https://bistro-boss-server-blush-phi.vercel.app/carts?email=${user?.email}`)
             
             return res.json();
         },
